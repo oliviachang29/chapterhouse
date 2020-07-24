@@ -15,4 +15,5 @@ fields:
   name: link
   label: link
 pages:
+- src/sites/deplace-maison.md.md
 - src/sites/editions-jordan-sowers.md
