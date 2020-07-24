@@ -12,8 +12,8 @@ sections:
   exclude: sites.json
   templates:
   - site
-upload_dir: assets/images/sites
-public_path: "/src/assets/images/sites"
+upload_dir: src/assets/images/sites
+public_path: "/assets/images/sites"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
