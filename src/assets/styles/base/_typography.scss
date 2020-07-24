@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Calibre';
+    src: url('/assets/fonts/Calibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('/assets/fonts/Calibre-Semibold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eksell Display Stencil';
+    src: url('/assets/fonts/Eksell Display Stencil.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +42,7 @@ h2 {
 
 p {
     margin: 0;
+    font-weight: normal;
 }
 
 .lead {
@@ -30,5 +52,16 @@ p {
 
     @include mq(md) {
         font-size: 2rem;
+    }
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    transition: .2s all;
+    &:hover {
+        opacity: 0.8;
+        color: inherit;
+        text-decoration: none;
     }
 }

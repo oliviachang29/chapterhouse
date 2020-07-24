@@ -2,8 +2,25 @@
     padding: $spacing-y 0;
 
     &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @media (min-width: $md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
+}
+
+#logo {
+    font-family: 'Eksell Display Stencil';
+    font-size: 33.44px;
+    font-weight: bold;
+    color: #000000;
+    @media (max-width: $md) {
+        margin-bottom: 20px
+    }
+}
+
+#description {
+    font-size: 20px;
+    color: #3e3e3e;
 }

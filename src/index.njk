@@ -3,7 +3,18 @@ layout: base
 eleventyNavigation:
   key: Home
 ---
-
 <div class="container">
-    <h1>A blank 11ty project.</h1>
+  <section class="section-sites">
+    <div class="row">
+      {% for site in collections.sites %}
+        <div class="col-md-6">
+          <div class="site-container">
+            <img src="{{site.data.image_url}}" class="site-image">
+            <p class="site-text">
+              <strong>{{ site.data.name }}—</strong>{{site.data.fonts}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
 </div>
