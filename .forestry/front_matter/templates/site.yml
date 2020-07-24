@@ -15,6 +15,7 @@ fields:
   name: link
   label: link
 pages:
+- src/sites/ashx-video.md
 - src/sites/deplace-maison.md.md
 - src/sites/editions-jordan-sowers.md
 - src/sites/the-outline.md
