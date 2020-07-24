@@ -7,12 +7,12 @@ eleventyNavigation:
   <section class="section-sites">
     <div class="row">
       {% for site in collections.sites %}
-        <div class="col-lg-6">
-          <div class="site-container">
-            <img src="{{site.data.image_url}}" class="site-image">
+        <div class="col-lg-6 site-container">
+          <a href="{{site.data.link}}" target="_blank">
+            <img data-src="{{site.data.image_url}}" class="site-image lazy" alt="{{site.data.name}}" src="/assets/images/lazy.jpg">
             <p class="site-text">
               <strong>{{ site.data.name }}—</strong>{{site.data.fonts}}</p>
-          </div>
+          </a>
         </div>
       {% endfor %}
     </div>
