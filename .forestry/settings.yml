@@ -9,6 +9,7 @@ sections:
   label: Sites
   create: all
   match: "**/*"
+  exclude: sites.json
 upload_dir: assets/images/sites
 public_path: "/assets/images/sites"
 front_matter_path: ''
